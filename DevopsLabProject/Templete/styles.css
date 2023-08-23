@@ -1,0 +1,35 @@
+
+body {
+    background-image: url("rps.jpg");
+    background-color: #f8f9fa;
+    color: #333;
+    background-size: 100% 100%;
+
+  }
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+  }
+  
+  img {
+    max-width: 100%; 
+    height: auto;
+  }
+
+  .form-control {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
+  
