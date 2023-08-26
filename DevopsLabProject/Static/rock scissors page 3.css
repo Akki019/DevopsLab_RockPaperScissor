@@ -1,0 +1,66 @@
+h1{
+	display: block;
+	font-family: sans-serif;
+	margin: 20px auto;
+	font-size: 3em;
+	margin-top: 1.33em;
+	margin-bottom: 1.33em;
+
+}
+
+
+
+
+
+
+
+.opn{
+	border: 5px solid; lightgrey;
+	width: 350px;
+	padding: 50px 30px;
+	margin: 20px auto;
+	font-family: cursive;
+	background-color: lightcyan;
+	border-radius: 7%;
+}
+.img{
+	width:100%;
+	border: none;
+	border-radius: 10%;
+}
+
+.img2{
+	width:100%;
+	border: none;
+	border-radius: 10%;
+
+}
+
+.win{
+	border: black;
+	border-radius: 10%;
+	background-color: whitesmoke;
+	font-family: serif;
+	margin: 30px auto;
+	padding: 10px;
+}
+
+
+.btn{
+	border: white;
+	border-radius: 10%;
+	background-color: black;
+	font-family: revert-layer;
+	margin: 10px auto;
+	padding:8px 3px;
+	color: white;
+}
+.btn2{
+	border: white;
+	border-radius: 10%;
+	background-color: black;
+	color: white;
+	font-family: revert-layer;
+	margin: 10px auto;
+	padding: 8px 3px;
+}
