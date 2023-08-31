@@ -53,20 +53,13 @@
   <div class="container text-center mt-5">
     <h1 class="mb-4">Rock Paper Scissors Game</h1>
     <p>Choose your input:</p>
-    <div class="form-check">
-      <input type="radio" class="form-check-input" value="rock" id="rock" name="topic" checked>
-      <label class="form-check-label" for="rock">ROCK</label>
-    </div>
-    <div class="form-check">
-      <input type="radio" class="form-check-input" value="paper" id="paper" name="topic">
-      <label class="form-check-label" for="paper">PAPER</label>
-    </div>
-    <div class="form-check">
-      <input type="radio" class="form-check-input" value="scissors" id="scissors" name="topic">
-      <label class="form-check-label" for="scissors">SCISSORS</label>
-    </div>
-    <button class="btn btn-primary mt-4" id="startButton">Next</button>
-  </div>
+    <form class="form-inline" method='POST' action="" enctype='multipart/form-data'>{% csrf_token %}
+
+  {{form.NUMS}}
+
+  <button class="btn btn-primary mt-4" id="startButton">Next</button>
+
+</form>
 
 </body>
 </html>

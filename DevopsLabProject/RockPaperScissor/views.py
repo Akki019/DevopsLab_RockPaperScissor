@@ -1,5 +1,6 @@
 from django.shortcuts import render, HttpResponse, redirect
 import gamescore
+from form import CHOICES
 
 def index(request):
 
@@ -15,7 +16,17 @@ def index(request):
     return render(request,'index.html')
 
 def input(request):
-    return render(request,'input.html')
+
+    form = CHOICES(request.POST)
+    if form.is_valid():
+        selected = form.cleaned_data.get("NUMS")
+        AI=gamescore.AI()
+        winner=gamescore.winner(selected,AI)
+        print(winner)
+        gamescore.gamescoreupdate(winner)
+        return redirect('/page3')
+
+    return render(request, 'input.html', {'form':form})
 
 def page3(request):
     return render(request,'page3.html')
