@@ -23,11 +23,12 @@ def input(request):
         AI=gamescore.AI()
         winner=gamescore.winner(selected,AI)
         print(winner)
-        gamescore.gamescoreupdate(winner)
+        gamescore.gamescoreupdate(selected,AI,winner)
         return redirect('/page3')
 
     return render(request, 'input.html', {'form':form})
 
 def page3(request):
-    return render(request,'page3.html')
+    dic=gamescore.getresult()
+    return render(request,'page3.html',dic)
 
