@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Rock Paper Scissors Game
-        </title>
-    </head>
-    <body>
-        <h1>
-            Rock Paper Scissors Game
-        </h1>
-      <p>
-        Choose Input
-        </p>
-      <div>
-    <label for="ROCK">
-        <input type="radio" value="rock" id="rock" name="topic" checked />
-        ROCK
-    </label>
-        </div>
-      <div>
-    <label for="PAPER">
-        <input type="radio" value="paper" id="paper" name="topic" />
-        PAPER
-    </label>
-        </div>
-      <div>
-        <label for="SCISSORS">
-        <input type="radio" value="scissors" id="scissors" name="topic" />
-        SCISSORS
-    </label>
-</div>
-      <button class="btn btn-primary" id="startButton">Next</button>
-    </body>
+<head>
+<h1><center>Rock Paper Scissors Game</h1>
+<style>
+  .option-label {
+    display: inline-block;
+    margin-right: 20px;
+  }
+</style>
+<style>
+body {
+  background-image: url("images (2).jpeg");
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<h2><center>Select Any one:</h2>
+
+<form>
+  <label class="option-label">
+    <input type="radio" name="Rock Paper Scissors" value="Rock">
+    <img src="download.jpeg" alt="Rock">
+  </label>
+  
+  <label class="option-label">
+    <input type="radio" name="Rock Paper Scissors" value="Paper">
+    <img src="images.jpeg" alt="Paper" class="center">
+  </label>
+  
+  <label class="option-label">
+    <input type="radio" name="Rock Paper Scissors" value="Scissors">
+    <img src="download.png" alt="Scissors" class="right">
+  </label>
+  <br>
+
+  
+<br>
+  <input type="image" src="img_submit.gif" alt="Submit" width="96" height="96">
+</form>
+
+</body>
 </html>
