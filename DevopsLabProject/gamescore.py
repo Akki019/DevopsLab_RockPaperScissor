@@ -51,4 +51,5 @@ def getresult():
     record=data[3].split()
     if record[2]!='AI' and record[2]!='Draw':
         record[2]=data[0]
-    return {'player':record[0],'AI':record[1],'winner':record[2]}
+    scorecard=data[2].split()
+    return {'player':record[0],'AI':record[1],'winner':record[2],'playername':data[0],'playerwins':scorecard[1],'aiwins':scorecard[2]}

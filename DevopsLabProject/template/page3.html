@@ -9,13 +9,16 @@
 	<h1>ROCK PAPER SCISSORS </h1>
 
 	<div class ='opn'>
-		<h1>AI</h1>
+		<h1>AI    {{aiwins}}</h1>
 		<img class="img"src="{% static AI %}"><br>
 
-		<h2>YOURS</h2>
+		<h1>{{playername}}    {{playerwins}}</h1>
 		<img class="img2"src="{% static player %}"><br>
 
 		WINNER:{{winner}}
+
+		<button class="btn btn-primary" id="startButton">Start Game</button>
+		<button class="btn btn-primary" id="startButton">Start Game</button>
 
 
 
