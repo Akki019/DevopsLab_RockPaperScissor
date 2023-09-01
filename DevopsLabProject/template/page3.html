@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'page3.css' %}">
+	<title> 3rd Page</title>
+</head>
+<body>
+	<h1>ROCK PAPER SCISSORS </h1>
+
+	<div class ='opn'>
+		<h1>AI    {{aiwins}}</h1>
+		<img class="img"src="{% static AI %}"><br>
+
+		<h1>{{playername}}    {{playerwins}}</h1>
+		<img class="img2"src="{% static player %}"><br>
+
+		WINNER:{{winner}}
+
+		<button class="btn btn-primary" id="startButton">Start Game</button>
+		<button class="btn btn-primary" id="startButton">Start Game</button>
+
+
+
+</body>
+</html>

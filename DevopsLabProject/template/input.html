@@ -1,45 +1,64 @@
-<!DOCTYPE html>
+<!--
+  PALAK's Code
+  <!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Rock Paper Scissors Game
+        </title>
+    </head>
+    <body>
+        <h1>
+            Rock Paper Scissors Game
+        </h1>
+      <p>
+        Choose Input
+        </p>
+      <div>
+    <label for="ROCK">
+        <input type="radio" value="rock" id="rock" name="topic" checked />
+        ROCK
+    </label>
+        </div>
+      <div>
+    <label for="PAPER">
+        <input type="radio" value="paper" id="paper" name="topic" />
+        PAPER
+    </label>
+        </div>
+      <div>
+        <label for="SCISSORS">
+        <input type="radio" value="scissors" id="scissors" name="topic" />
+        SCISSORS
+    </label>
+</div>
+      <button class="btn btn-primary" id="startButton">Next</button>
+    </body>
+</html>
+  -->
+
+
+  <!-- Updated Palak's Code-->
+
+
+  <!DOCTYPE html>
 <html>
 <head>
-<h1><center>Rock Paper Scissors Game</h1>
-<style>
-  .option-label {
-    display: inline-block;
-    margin-right: 20px;
-  }
-</style>
-<style>
-body {
-  background-image: url("images (2).jpeg");
- background-repeat: no-repeat;
- background-size: cover;
-}
-</style>
+  {% load static %}
+  <title>Rock Paper Scissors Game</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'input.css' %}">
 </head>
 <body>
+  <div class="container text-center mt-5">
+    <h1 class="mb-4">Rock Paper Scissors Game</h1>
+    <p>Choose your input:</p>
+    <form class="form-inline" method='POST' action="" enctype='multipart/form-data'>{% csrf_token %}
 
-<h2><center>Select Any one:</h2>
+  {{form.NUMS}}
 
-<form>
-  <label class="option-label">
-    <input type="radio" name="Rock Paper Scissors" value="Rock">
-    <img src="download.jpeg" alt="Rock">
-  </label>
-  
-  <label class="option-label">
-    <input type="radio" name="Rock Paper Scissors" value="Paper">
-    <img src="images.jpeg" alt="Paper" class="center">
-  </label>
-  
-  <label class="option-label">
-    <input type="radio" name="Rock Paper Scissors" value="Scissors">
-    <img src="download.png" alt="Scissors" class="right">
-  </label>
-  <br>
+  <button class="btn btn-primary mt-4" id="startButton">Next</button>
 
-  
-<br>
-  <input type="image" src="img_submit.gif" alt="Submit" width="96" height="96">
 </form>
 
 </body>
