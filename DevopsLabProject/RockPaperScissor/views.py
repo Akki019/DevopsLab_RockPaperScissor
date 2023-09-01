@@ -32,3 +32,7 @@ def page3(request):
     dic=gamescore.getresult()
     return render(request,'page3.html',dic)
 
+
+def result(request):
+    return render(request,'result.html')
+    
