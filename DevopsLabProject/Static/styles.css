@@ -7,13 +7,18 @@ body {
 
   }
 
-
   .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+  }
+
+  .head{
+    color: white;
+    align-items: center;
+    top: 100px;
   }
   
   .btn {
@@ -22,10 +27,7 @@ body {
     margin: 5px;
   }
   
-  img {
-    max-width: 100%; 
-    height: auto;
-  }
+
 
   .form-control {
     width: 100%;
