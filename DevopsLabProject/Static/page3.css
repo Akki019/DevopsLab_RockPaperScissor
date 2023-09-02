@@ -1,4 +1,4 @@
-h1{
+/*h1{
 	display: block;
 	font-family: sans-serif;
 	margin: 20px auto;
@@ -15,7 +15,7 @@ h1{
 
 
 .opn{
-	border: 5px solid; lightgrey;
+	border: 5px solid;
 	width: 350px;
 	padding: 50px 30px;
 	margin: 20px auto;
@@ -63,4 +63,72 @@ h1{
 	font-family: revert-layer;
 	margin: 10px auto;
 	padding: 8px 3px;
+} */
+
+
+
+body{
+    margin-top: 12%;
 }
+
+
+.result-box {
+    display: flex;
+    margin-top: 12%;
+    justify-content: space-evenly;
+}
+
+.ai-container,
+.player-container,.win {
+    width: 20%; 
+    text-align: center; 
+    padding: 10px; 
+    border: 1px solid #333; 
+    border-radius: 5px; 
+    margin-top: auto;
+}
+
+
+.ai-container {
+    background-color: lightcyan; 
+}
+
+.player-container {
+    background-color: lightcyan; 
+}
+
+.container-image {
+    max-width: 250px;
+    max-height: 250px; 
+}
+
+
+
+.button-container {
+    display: flex;/*horizontal buttons*/
+    
+    margin-top: 20px; /*margin for the button wrt the box*/
+    justify-content:space-evenly;
+    padding: 10px;
+}
+
+.winner-box {
+	
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+
+.winner-box h3 {
+    font-size: 24px; 
+    color: #333; 
+}
+
+.winner-box p {
+    font-size: 24px; 
+    color: #777; 
+}
+
+
+
+
