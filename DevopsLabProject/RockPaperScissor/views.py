@@ -34,7 +34,8 @@ def page3(request):
 
 
 def result(request):
-    return render(request,'result.html')
+    dic=gamescore.getfinalresult()
+    return render(request,'result.html',dic)
     
 def nextround(request):
     if gamescore.ismoreround():
