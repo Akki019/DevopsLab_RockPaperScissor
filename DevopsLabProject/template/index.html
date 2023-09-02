@@ -16,9 +16,9 @@
     <form method="post" action="/">
       {% csrf_token %}   
     <p>Please enter your name:</p>
-    <input type="text" name="name" id="playerName" class="form-control mb-3" placeholder="Your Name">
+    <input type="text" name="name" id="playerName" class="form-control mb-3" placeholder="Your Name" required>
     <p>Enter the number of rounds:</p>
-    <input type="number" name="rounds" id="rounds" class="form-control mb-3" placeholder="Number of Rounds">
+    <input type="number" name="rounds" id="rounds" class="form-control mb-3" placeholder="Number of Rounds" required>
     <button class="btn btn-primary" id="startButton">Start Game</button>
   </form>
   </div>
