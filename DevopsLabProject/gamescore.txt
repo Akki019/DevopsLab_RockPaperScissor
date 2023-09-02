@@ -1,4 +1,4 @@
-svs
-3
-3 2 0
-paper.jpg paper.jpg Draw
+palak
+2
+1 0 1
+paper.jpg scissor.jpg AI
