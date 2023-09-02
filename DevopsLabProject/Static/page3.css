@@ -70,6 +70,7 @@
 body{
     margin-top: 12%;
 	background-image: url("test.jpeg");
+	background-size: cover;
 }
 
 
