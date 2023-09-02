@@ -66,3 +66,19 @@ def ismoreround():
         return False
     else:
         return True
+    
+
+def getfinalresult():
+    f = open("gamescore.txt", "r")
+
+    data = f.readlines()
+    record=data[3].split()
+    scorecard=data[2].split()
+    if scorecard[1]>scorecard[2]:
+        winner=data[0]+' wins'
+    elif scorecard[1]<scorecard[2]:
+        winner='AI wins'
+    else:
+        winner='Draw'
+    f.close()
+    return {'winner':winner,'playername':data[0],'playerwins':scorecard[1],'aiwins':scorecard[2]}

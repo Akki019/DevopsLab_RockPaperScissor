@@ -1,4 +1,4 @@
-Guest
-9
-1 0 1
-scissor.jpg rock.jpg AI
+svs
+3
+3 2 0
+paper.jpg paper.jpg Draw
