@@ -36,3 +36,8 @@ def page3(request):
 def result(request):
     return render(request,'result.html')
     
+def nextround(request):
+    if gamescore.ismoreround():
+        return redirect("/input")
+    else:
+        return redirect("/result")

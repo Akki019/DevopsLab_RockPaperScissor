@@ -1,4 +1,4 @@
 Guest
-4
-2 1 0
-rock.jpg scissor.jpg Player
+9
+1 0 1
+scissor.jpg rock.jpg AI

@@ -52,4 +52,17 @@ def getresult():
     if record[2]!='AI' and record[2]!='Draw':
         record[2]=data[0]
     scorecard=data[2].split()
+    f.close()
     return {'player':record[0],'AI':record[1],'winner':record[2],'playername':data[0],'playerwins':scorecard[1],'aiwins':scorecard[2]}
+
+def ismoreround():
+    f = open("gamescore.txt", "r")
+
+    data = f.readlines()
+    roundsplayed=data[2].split()[0]
+    print(roundsplayed)
+    print(data[1])
+    if int(roundsplayed)==int(data[1]):
+        return False
+    else:
+        return True
