@@ -1,4 +1,4 @@
-palak
-2
+Dhruv
+1
 1 0 1
-paper.jpg scissor.jpg AI
+rock.jpg paper.jpg AI
