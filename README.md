@@ -39,7 +39,7 @@ Planning and meetings:
 3. Planned various offline and online meetings to plan up the things. Adjustments were made based on feedbacks.
 
 
-Authors: Akshit Bhutani, Dhruv Jain, Bhavesh Kapur, Palak Gupta.
+Authors: Akshit Bhutani, Dhruv Jain, Bhavesh Sanjiv Kapur, Palak Gupta.
 
 
 
